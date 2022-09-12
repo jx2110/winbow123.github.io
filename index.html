@@ -1,6 +1,127 @@
  <p{font-size:24px;}>可视化图表</p>
 <font face="楷书" >可视化图表</font>
 <h1>这是一个标题。</h1>
+    <style>
+      @font-face {
+      font-family: 'webfontregular';
+      src: url('hanyixuefengtijian-1-webfont.woff2') format('woff2'),
+          url('hanyixuefengtijian-1-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+
+      #scrolly {
+      position: relative;
+      background-color: #ffffff;
+      padding: 1rem;
+      }
+
+      article {
+        position: relative;
+        padding: 0;
+        max-width: 20rem;
+        margin: 0 auto;
+        pointer-events: none;
+      }
+
+      figure {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        background-color: #8a8a8a;
+      }
+
+      figure p {
+        text-align: bottom;
+        padding: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        color: #000000;
+        background-color: rgba(255, 255, 255, 0.5);
+		    font-size: 17px;
+		    line-height: 180%;
+		    padding: 2em;
+		    pointer-events: none;
+        box-shadow:0px 0px  8px 3px #bcbcbc;
+      }
+	  
+	    .invisible {
+        visibility: hidden;
+      }
+
+      .step:last-child {
+        margin-bottom: 0;
+      }
+
+      .step.is-active {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #000000;
+      }   
+      
+    </style>
+
+
+
+
+
+
+
+
+
+<section id="article-body" class="responsive">
+        <br></br>
+        <div class="article-copy dropcap">
+        <p>2014年，小陈发现自己的孩子不太对劲。女儿小琳一岁，在一场高烧后常常显得没精打采，总是不肯走路，要大人抱。</p>
+        <p>小琳这种表现似乎只是因为身体发育慢。她出生的时候只有4.9斤，瘦瘦小小，远达不到平均标准。小陈一直担心女儿的身体健康和发育情况——她自己身体不好，害怕孩子也会像她一样。小陈首先带孩子去了当地的医院。打过镇定剂以后，小琳却一直睡不着，没法继续做检查。准备打第二针镇定的时候，医生来看情况，发现小孩已经缺氧了。</p>
+        <p>小琳从那时候起就戴上了呼吸机，此后的六年里，她没再离开过这台机器。</p>
+        <p>医生建议小琳转院到省会广州治疗，那里的医院水平更高，医生见得更多，能告诉小陈，她的孩子身上到底发生了什么。</p>
+        <p>小陈隐隐觉得，自己仿佛触碰到了一座庞大的冰山。</p>
+        <p>广州的医生给出了一个完全出乎小陈意料的可能：他们怀疑，小琳可能是庞贝病患者。基因检测和酶活性检测结果佐证了这个判断，由于第十七号染色体发生突变，小琳体内缺乏酸性α-葡萄糖苷酶 (acid alpha-glucosidase)，糖原无法正常降解，也无法给肌肉供给营养。这是一种常染色体隐性遗传病，在国际上普遍被认为属于罕见病之一。</p>
+        <p>这就是小琳“不肯走路”的原因。“不肯走路”是所有症状里看上去最轻的那一个，小琳体内缺少的酶会使她的心肌、骨骼肌和呼吸肌受到不可逆转的损伤，进而面临呼吸困难、心肺衰竭、运动障碍种种问题。那些在一岁之前确诊庞贝病的小患者，绝大多数活不过一岁。小琳那时两岁，她的生命很有可能会被这个大多数人闻所未闻的疾病截断在未来的某一天。</p>
+        <span class="pullquote">“我连那些先天性疾病都没听说过。”小陈说，“我怎么会知道庞贝病？”困扰她的问题终于有了答案，但这个答案让她崩溃了。庞贝病的“罕见”两个字暗示着很多出路不可通行：<span style="color: #ffffff; background-color: #3d4ca3;"">医生没有经验、国内没有药物、治疗费用高昂、患者终生无法痊愈。</span></span>
+        <p style="text-align: center;"><img src ="img/16Medical.png" height="300"/></p>
+        
+        <p>庞贝病是罕见病的一种。2016年，蔻德罕见病发展中心就已经建立了一个民间的罕见病专门目录，2018年，我国五部委联合公布了《中国罕见病参考名录》。121种疾病中，不少疾病都有着拗口的名字。除了血友病、白化病这些有着典型特征、民众认知度稍高的疾病之外，这些发病率极低的疾病并不为人所知，甚至很多一线医务工作者也无从得知病名，也不会将来问诊的患者归到“罕见病”群体中去。
+        </p>
+        <iframe src='https://flo.uri.sh/visualisation/6839863/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:800px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+        <p>
+        误诊是罕见病患者经常碰到的一个问题：他们无法叫出困扰他们的病症的名字，或者更糟，他们在经过数次求医之后，发现从前的治疗方向是错的，而在确诊的漫长过程中，他们的身体机能一刻不停地下降。小琳算是比较幸运的一个，为她看病的医生曾经接触过庞贝病，建议首先做基因检测，她不必为了确诊而耗费时间。
+        庞贝病关爱中心的内部报告给出了更为现实的数字：填写相关问题的166位患者的平均确诊年限是1.09年（13.13个月），一年之内无法确诊的患者往往要走更长的路，他们的平均确诊年限是4.95年（59.40个月）。如果不进行基因检测，庞贝病极有可能被误诊为肌营养不良，或者重症肌无力。那些了解罕见病、有诊断经验的医生必定会迎来更多疑似病人：这些医生的名字在庞贝病友交流群中常常被提起，走了太多弯路的患者把自己的经验总结起来，告诉每个新进群、无处问诊的人“谁是可靠的医生”“谁了解庞贝病”“谁会让你们做基因和酶检测”。他们早年在确诊时吃了苦头，希望能给同伴早点吃下定心丸——与这样的疑难病症缠斗，未知才是敌人，确诊反而是最好的结果。
+        </p>
+        <p>
+          而住进ICU一年多，小琳还是无法撤掉呼吸机自主呼吸。
+        </p>
+        <p>
+          “要是她不能离开呼吸机，我们根本不知道接下来的生活要怎么办。”小陈说。
+        </p>
+        <p>
+          为了让女儿成功撤机，小陈做了很多努力：她锻炼孩子自主呼吸的能力，从一分钟增加到五分钟，再到一小时。为了撤机，她还把孩子注射美而赞的剂量从四支增加到了五支，希望药物能让小琳“更有力气一点”。
+          因为国内美而赞并没有上市，小陈每次给女儿用药，都要从广东跑到香港去买。一开始一次要用三支，后来剂量加到四支、五支。按照半个月用一次的频率来算，小陈平均一个月就要为五到十支美而赞买单，加起来的价格相当于小陈和丈夫四五个月的工资。
+        </p>
+        <p></p>
+        <p>虽然小陈不会因为无法撤机放弃孩子，但她害怕未来会有一天，一切办法都用尽，她还是不得不看着小琳离开。一个戴着呼吸机的孩子，家人能照顾到什么时候，离正常生活有多远，以后能不能独立，所有这些都是问题。那个时候，小陈一家已经无法负担ICU高昂的费用，考虑把孩子从医院接回家里。</p>
+        <p>好在小琳的状态还不错。做了气切之后，一根透明的管子从喉咙开口处伸出，帮她维持着顺畅的呼吸。她已经习惯了这根管子的存在，在小陈抖音上传的视频里，她弹尤克里里，唱歌。妈妈在在“小琳日记”里写，因为气切的原因，女儿一开始唱歌还有点口齿不清，现在已经能完整地唱完一首了。</p>
+        <p> 到香港领药、再请护工来家里注射药的情况持续到2017年。一直密切关注国家相关政策的小陈了解到，美而赞在中国大陆获准上市了。这得益于CFDA（国家食品药品监督管理局）免三期临床试验的政策。</p>
+        <p>2017年之后，小陈改去广州领取药物。后来为了节省时间，她和药厂做了沟通，药厂在她住的城市也设置了领药点。但是，广东省并未将美而赞列在医保报销政策的名单中，这意味着即使小陈可以在国内直接购买到美而赞，她还是无法承担高昂的药物费用，用药频率和剂量因此也仍然不能达到要求。</p>
+        <p class="line-break margin-top-20"></p>
+      </div></section>
+
 
 
 
