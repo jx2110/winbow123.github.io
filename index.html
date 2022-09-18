@@ -4,7 +4,7 @@
 	
 <head>
 	
-	
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	
 	
@@ -25,74 +25,203 @@
 			z-index: 3;
 		}
 		
+		.nav2 {
 		
+		} 
+		.fixnav {
+		position: fixed; 
+		top: 0px; 
+		left: 0px; 
+		} 
+		
+		.nav li{  
+		background-color: black;  
+	   padding-left: 0 ;
+		 float: left;   
+		 list-style: none;   
+		 color:white;
+		 font-size: 2vw;
+		 width:25%;
+		 line-height: 8vw;
+		 height: 8vw;
+		vertical-align: middle;
+		 text-align: center; 
+		} 
+		li:hover{
+		            background-color:#73838d;
+		            color:#fefeff;
+		            cursor: pointer;
+		        }
 	</style>
 </head>
 <body style="
-    background: #444;
+    background: #823b00;
     margin: 0 !important;
     position: relative;
-	font-family: PingFangSC-Medium, sans-serif;
+	
 ">
 
 
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript"> 
+	$(function() { 
+	$(".nav2").hide(); 
+	 var div1 = document.getElementById('map1');
+	  var div2 = document.getElementById('map3');
+	           
+				
+				
+				
+	$(window).scroll(function() { 
+	if($(document).scrollTop() >= div1.offsetHeight+div2.offsetHeight) { 
+	$(".nav2").addClass("fixnav").slideDown(); 
+	} else { 
+	$(".nav2").hide(); 
+	} 
+	}) 
+	}) 
+	</script>
 
 
 
 
 
-
-
-
-
-<div class="flourish-embed flourish-map1"style='width:100%;height:auto; float: left;width: 100%;background-color:rgba(92, 93, 95, 0.90); position:fixed;
-            top:0px;
-'><p class="flourish-p-after" style="float: left;width: 100%;
- color: white;
- font-size: 30;
- text-align: center;
+<div class="map1" id="map1" style='width:100vw;height:56.25vw; float: left; position:fixed;background-image:url("back.png");background-repeat:no-repeat；
+	background-size: 100% 100%;  
+	background-size: cover;
+            top:0px;z-index:-1'
+   > <p class="flourish-p-after" style="width:80%; padding: 10%;
+ color: rgba(255, 255, 255, 0);
+ font-size: 4.09vw;
+ text-align: right;
+   height: 40vw;
+margin-bottom: 0;
+float: left;
+font-family: PingFangSC-Medium, sans-serif;
  "
- >踩在大地上的脚印</p></div>
+ >汉默（丈夫）说：“你的妻子与母亲角色先于其他一切。”娜拉：“我不认为是这样。我相信我和你一样，身为‘人’的角色先于其他……我将尽一切努力争取成为一个‘人’。”
+<br>——易卜生 《玩偶之家》
+
+</div><div>
  
- <div class="flourish-embed flourish-map2"style='width:100%;height:auto; float: left;width: 100%;background: #444; 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="flourish-embed flourish-map2"style='width:100vw;height:56.25vw;float: left;width: 100%;background-color:rgba(92, 93, 95, 0); 
            ;
  '
- ><p style="float: left;width: 100%;
-  color: white;
-  font-size: 30;
-  text-align: center;
-  "
-  >踩在大地上的脚印</p></div>
-
+ ><p style="width:80%; padding: 10%;
  
- <div class="flourish-embed flourish-map3;"style='width:100%;height:auto; float: left;width: 100%;background: #cbcbcb; backdrop-filter: blur(50px);'><p style="float: left;width: 90%;
-  color: white;
-  font-size: 20;
+ color:rgba(255, 255, 255, 1);
+  font-size: 4vw;
   text-align: justify;
-  text-indent:2em;
-  padding:0 5% ;
+  vertical-align:middle;
+  height:100%;
+  font-family: PingFangSC-Medium, sans-serif;
   "
-  >   2011年起，中国的生育政策逐步开始从限制生育到鼓励生育，双独二孩（2011年）、单独二孩（2013年）、全面开放二孩（2015年）、实行三孩……
-然而，据国家统计局数据显示，2002年的出生率为12.8%，之后几年出生率波动式下降，2021年我国人口出生率仅为7.52%，出生人口数量也由2020年的1200万人，降至2021年的1062万人。预期的生育潮并未到来，反而陷入人口低增长的怪圈。
-出生率的变化离不开女性对新生儿的生育，据2021年国家卫生健康委调查显示，育龄妇女生育意愿继续走低，平均打算生育子女数为1.64个，低于2017年的1.76个和2019年的1.73个。
-女性为什么渐渐不愿意生孩子？
+  >汉默（丈夫）说：“你的妻子与母亲角色先于其他一切。”娜拉：“我不认为是这样。我相信我和你一样，身为‘人’的角色先于其他……我将尽一切努力争取成为一个‘人’。”
+——易卜生 《玩偶之家》</p></div>
+
+
+
+
+
+ <div class="map3;" id="map3" style='width:100%;height:auto; float: left;background: rgba(2, 2, 1,0.5); backdrop-filter: blur(50px);'><p style="float: left;
+  color: white;
+  text-align: center;
+  padding-left:5%;
+  width:90%;
+   font-family: PingFangSC-Medium, sans-serif;
+  line-height: 2;
+  letter-spacing:1;
+   font-size: 8vw;
+  "
+  >做母亲：<br>必选题还是自由命题？
 
 </p></div>
+
+
+
+
+
+
+ <div class="nav2" style='width:100vw;background: black; '>
+  
+<ul class="nav" style="  width:100vw;" >  
+<li><a href="#map4">女子本弱，为母则强？ </a></li>  
+<li >母职代价</li>  
+<li >从“小妇人”到“大女主”</li>  
+<li >社会改变始于家庭</li>  
+
+</ul>
+
+</div>
+
+									 
+ <div class="map4" id="map4" style='width:100%;height:auto; float: left;background: #444; backdrop-filter: blur(50px);'><p style="float: left;
+  color: white;
+  text-align: center;
+  padding-left:5%;
+  width:90%;
+   font-family: PingFangSC-Medium, sans-serif;
+  line-height: 2;
+  letter-spacing:1;
+   font-size: 4vw;
+  "
+  >一、女子本弱，为母则强？
+
+</p></div>
+
+
+
+
  
- <div class="flourish-embed flourish-maps;"style='width:100%;height:auto; float: left;width: 100%;background: #cbcbcb; backdrop-filter: blur(50px);'><p style="float: left;width: 100%;
-   color: white;
-   font-size: 20;
-   text-align: justify;
-   text-indent:2em;
-   padding:0 5% ;
-   width:90%;
-   "
-   >   
- 母亲，这对女性来说是一个责任重大的词。从成为母亲的那一刻，很多事情都会改变，面对这一新身份，需要迎接许多挑战——母亲困境，每一种困境都是一个深入的哲学命题。 
- 女性在成为母亲之后来自外部压力的关键是母亲经济负担和母亲职场弱势。养育孩子需要资金，女性由于生理区别、传统社会性别分工等原因，往往会被授予“孩子最亲近的人”，认为应当承担更多抚养孩子的责任，这就意味着母亲可能会花更多的个人工资和精力抚养孩子，从而造成个人经济负担和职场歧视，这可能是女性在成为母亲后自然而然选择的，也有可能是被迫放弃的。
- 内部主要面对的焦虑有自身身体问题、心理变化。生育孩子可能会给女性带来产后宫缩、排恶露、漏尿等身体伤害，还会造成产后抑郁的心理创伤，甚至为了照顾孩子，母亲必须舍弃个人时间，一天24小时以孩子为中心绕圈，失去私人空间。同时，为人母，如何给予适度母爱，培养、引导孩子，也是女性成为母亲后时常担忧的话题。
- 这些母亲困境，不仅将已生育女性嵌入社会上定义的“母亲”一词的枷锁中，不愿意继续生孩子，也导致未生育女性的生育意愿降低，影响社会可持续发展。
- </p></div>
+ <div class="flourish-embed flourish-map3;"style='width:100%;height:auto; float: left;width: 100%;background: rgb(255, 255, 255); backdrop-filter: blur(50px);'><p style="float: left;width: 90%;
+  color: black;
+  font-size: 30;
+  text-align: justify;
+  text-indent:2em;
+  padding:0 10% ;
+  width: 80%;
+  font:'宋体';
+  line-height: 2;
+  letter-spacing:1;
+  "
+  >   在当下形形色色的社交媒体和各种视频平台上，“晒娃”成为流量密码之一。相应地，也诞生了一个数量庞大的“宝妈”群体。她们热衷于在各种媒介和镜头画面中展示自己孩子的形象，养育和照料宝宝的心得、厨艺、穿搭、才艺训练，以及与孩子的各种互动等。这样洋溢着浓浓母爱的画面，营造出的“母慈子孝、岁月静好”的氛围，唤起了多少人心底的母性。（数据？可视化形式等）广义上的母性，是指母亲爱护子女的本能，也指女性像母亲一样喜欢去保护怜爱人或物的本能。一方面，母性是柔和温暖的，向外界散发出关爱；母性也可以是坚硬的甲胄，爆发出强大的女性力量，充当牢不可破的保护罩。另一方面，母性也存在着“阴影面”，自我牺牲、委屈、抱怨的被动角色，又或者是强势、挑剔与评判的掌控角色。随着当下社会的发展与进步,女性自主意识逐渐觉醒,其社会地位在不断提高。女性的自我意识也在不断进步和成长。表现之一，就是很多女性开始反思：生儿育女、相夫教子，是不是人生最大的成功与价值？
+
+</p></div>
+
+						 
+ <div class="flourish-embed flourish-map"style='width:100%;height:auto; float: left;width: 100%;background: #ffffff;' > 
+ <div class="flourish-embed flourish-map5"style='width:80%;padding:0 10%;height:68vw; background: #ffffff;'css_animation_delay="0"  >
+
+		
+			<iframe    wmode="transparent" src="https://dycharts.com/xshow/index.html?id=c_a64ce8f3a1be43c5497991c2788d3d1a" style="width:80vw; height:62.7vw;" id="a1" name="a1"
+				
+			scrolling="no" frameborder="0" align="center"marginheight="0"
+
+                marginwidth="0"></iframe>
+				
+				
+		
+	</div><div>
+
+ 
+
+
+
+
+
+
+
+
  
  
  
@@ -103,7 +232,7 @@
  <div class="flourish-embed flourish-map5"style='width:80%;padding:0 10%;height:68vw; background: #ffffff;'css_animation_delay="0"  >
 
 		
-			<iframe    wmode="transparent" src="https://dycharts.com/xshow/index.html?id=c_cf020f1d916d98f33c0d41d2d3372074" style="width:80vw; height:68vw;" id="a1" name="a1"
+			<iframe    wmode="transparent" src="https://dycharts.com/xshow/index.html?id=c_c2a548c96eaf7a1ad2b77cb7022a8552" style="width:80vw; height:62.7vw;" id="a1" name="a1"
 				
 			scrolling="no" frameborder="0" align="center"marginheight="0"
 
@@ -126,7 +255,7 @@
  
  
  
-<div class="flourish-embed flourish-map4"style='width:100%;height:auto; float: left;width: 100%;background: #444; backdrop-filter: blur(50px);'><p style="float: left;width: 100%;
+<div class="flourish-embed flourish-map4" id="maph" style='width:100%;height:auto; float: left;width: 100%;background: #444; backdrop-filter: blur(50px);'><p style="float: left;width: 100%;
  color: white;
  font-size: 30;
  text-align: center;
@@ -143,7 +272,7 @@
  "
  >卡片</p></div>
 <div class="flourish-embed flourish-map"style='width:100%;height:auto; float: left;width: 100%;background: #ffffff;' ><div class="flourish-embed flourish-cards" style='width:100%;height:auto; float: left;width: 80%;padding: 10%;'data-src="visualisation/11144812"><script src="https://public.flourish.studio/resources/embed.js"></script></div><div>
-
+<div class="flourish-embed flourish-map"style='width:100%;height:auto; float: left;width: 100%;background: #ffffff;' ></div> <div class="flourish-embed flourish-map5"style='width:80%;padding: 10%;height:auto; float: left;background: #ffffff;' data-src="visualisation/11144616"><script    src="https://public.flourish.studio/resources/embed.js"></script></div><div>
 
 
 <div class="flourish-embed flourish-map7"style='width:100%;height:auto; float: left;width: 100%;background: #444;'><p style="float: left;width: 100%;
@@ -289,3 +418,22 @@
 
 </body>
 </html>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> 
+<script type="text/javascript"> 
+$(function() { 
+$(".nav2").hide(); 
+ var div1 = document.getElementById('map1');
+  var div2 = document.getElementById('map3');
+           
+			
+			
+			
+$(window).scroll(function() { 
+if($(document).scrollTop() >= div1.offsetHeight+div2.offsetHeight) { 
+$(".nav2").addClass("fixnav").slideDown(); 
+} else { 
+$(".nav2").hide(); 
+} 
+}) 
+}) 
+</script>
